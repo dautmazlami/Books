@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BooksStore</string>
+    <string name="healthy_lifestyle">Healthy Lifestyle</string>
+    <string name="wellness">Wellness</string>
+    <string name="healtjy_meals">Healthy Meals</string>
+    <string name="button_more_details">MORE DETAILS</string>
+    <string name="button_read">READ</string>
+    <string name="text_error">THERE WAS AN ERROR!!!</string>
+    <string name="search_hint">Explore here ...</string>
+</resources>

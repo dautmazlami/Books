@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/search_bar_background"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="@string/search_hint" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BOOKS"
+            android:checked="true"
+            android:layout_weight="1"
+            android:onClick="onButtonSelected"/>
+
+        <RadioButton
+            android:id="@+id/radio_button_magazines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAGAZINES"
+            android:layout_weight="1"
+            android:onClick="onButtonSelected"/>
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</LinearLayout>
